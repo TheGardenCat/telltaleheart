@@ -1,0 +1,1363 @@
+1
+00:00:00,140 --> 00:00:03,840
+THE TELL-TALE HEART by Edgar Allan Poe |
+
+2
+00:00:04,460 --> 00:00:06,520
+This is a LibriVox recording. |
+
+3
+00:00:07,700 --> 00:00:10,080
+All LibriVox recordings are in the public domain. |
+
+4
+00:00:11,080 --> 00:00:14,780
+For more information or to volunteer, please visit
+
+5
+00:00:14,780 --> 00:00:20,980
+LibriVox.org | Read by John Doyle | THE TELL
+
+6
+00:00:20,980 --> 00:00:26,300
+-TALE HEART by Edgar Allan Poe | True, nervous,
+
+7
+00:00:26,300 --> 00:00:29,480
+Very, very dreadfully nervous I had been and
+
+8
+00:00:29,480 --> 00:00:29,880
+am.
+
+9
+00:00:30,820 --> 00:00:32,960
+But why will you say that I am
+
+10
+00:00:32,960 --> 00:00:33,540
+mad?
+
+11
+00:00:34,360 --> 00:00:37,680
+The disease had sharpened my senses, Not destroyed,
+
+12
+00:00:38,180 --> 00:00:39,240
+not dulled them.
+
+13
+00:00:40,160 --> 00:00:43,600
+Above all was a sense of hearing acute.
+
+14
+00:00:44,380 --> 00:00:46,320
+I heard all things in the heaven and
+
+15
+00:00:46,320 --> 00:00:46,980
+the earth.
+
+16
+00:00:47,720 --> 00:00:49,600
+I heard many things in hell.
+
+17
+00:00:50,580 --> 00:00:52,300
+How then am I mad?
+
+18
+00:00:52,300 --> 00:00:56,400
+Hearken and observe how healthy, How calmly I
+
+19
+00:00:56,400 --> 00:00:58,280
+can tell you the whole story.
+
+20
+00:00:59,160 --> 00:01:02,660
+It is impossible to say how first the
+
+21
+00:01:02,660 --> 00:01:04,180
+idea entered my brain.
+
+22
+00:01:04,620 --> 00:01:07,400
+But once conceived it haunted me day and
+
+23
+00:01:07,400 --> 00:01:07,840
+night.
+
+24
+00:01:09,220 --> 00:01:12,500
+Objects there were none, passions there were none.
+
+25
+00:01:13,000 --> 00:01:14,460
+I loved the old man.
+
+26
+00:01:15,160 --> 00:01:16,460
+He had never wronged me.
+
+27
+00:01:17,860 --> 00:01:19,920
+He had never given me insult.
+
+28
+00:01:20,940 --> 00:01:23,800
+For his gold I had no desire.
+
+29
+00:01:24,660 --> 00:01:26,680
+I think it was his eye.
+
+30
+00:01:27,380 --> 00:01:29,420
+Yes, it was this.
+
+31
+00:01:30,460 --> 00:01:33,100
+He had the eye of a vulture, A
+
+32
+00:01:33,100 --> 00:01:35,880
+pale blue eye with a film over it.
+
+33
+00:01:36,760 --> 00:01:39,060
+Whenever it fell upon me my blood ran
+
+34
+00:01:39,060 --> 00:01:43,140
+cold, And so by degrees, very gradually, I
+
+35
+00:01:43,140 --> 00:01:44,860
+made up my mind to take the life
+
+36
+00:01:44,860 --> 00:01:48,160
+of the old man, And thus rid myself
+
+37
+00:01:48,160 --> 00:01:49,580
+of the eye forever.
+
+38
+00:01:51,320 --> 00:01:52,940
+Now this is the point.
+
+39
+00:01:53,680 --> 00:01:55,300
+You fancy me mad.
+
+40
+00:01:56,220 --> 00:01:57,720
+Madmen know nothing.
+
+41
+00:01:58,560 --> 00:02:00,460
+But you should have seen me.
+
+42
+00:02:01,500 --> 00:02:04,260
+You should have seen how wisely I proceeded.
+
+43
+00:02:05,140 --> 00:02:09,419
+With what caution, with what foresight, With what
+
+44
+00:02:09,419 --> 00:02:11,440
+dissimulation I went to work.
+
+45
+00:02:12,020 --> 00:02:14,160
+I was never kinder to the old man
+
+46
+00:02:14,160 --> 00:02:16,200
+than during the whole week before I killed
+
+47
+00:02:16,200 --> 00:02:16,500
+him.
+
+48
+00:02:16,500 --> 00:02:20,180
+And every night, about midnight, I turned the
+
+49
+00:02:20,180 --> 00:02:21,800
+latch of his door and opened it.
+
+50
+00:02:22,400 --> 00:02:23,640
+Oh, so gently.
+
+51
+00:02:24,780 --> 00:02:27,280
+And then, when I had made an opening
+
+52
+00:02:27,280 --> 00:02:30,560
+sufficient for my head, I put in a
+
+53
+00:02:30,560 --> 00:02:35,920
+dark lantern, All closed, closed, and no light
+
+54
+00:02:35,920 --> 00:02:36,520
+shone out.
+
+55
+00:02:37,560 --> 00:02:39,520
+And then I thrust in my head.
+
+56
+00:02:41,140 --> 00:02:44,020
+Oh, you would have laughed to see how
+
+57
+00:02:44,020 --> 00:02:45,880
+cunningly I thrust it in.
+
+58
+00:02:46,500 --> 00:02:51,120
+I moved it slowly, very, very slowly, So
+
+59
+00:02:51,120 --> 00:02:53,600
+that I might not disturb the old man's
+
+60
+00:02:53,600 --> 00:02:54,000
+sleep.
+
+61
+00:02:55,200 --> 00:02:57,020
+It took me an hour to place my
+
+62
+00:02:57,020 --> 00:02:59,920
+whole head within the opening, So far that
+
+63
+00:02:59,920 --> 00:03:01,620
+I could see him as he lay upon
+
+64
+00:03:01,620 --> 00:03:02,320
+his bed.
+
+65
+00:03:03,580 --> 00:03:06,680
+Would a madman have been so wise as
+
+66
+00:03:06,680 --> 00:03:07,120
+this?
+
+67
+00:03:08,360 --> 00:03:11,360
+And then, when my head was well in
+
+68
+00:03:11,360 --> 00:03:14,520
+the room, I undid the lantern cautiously.
+
+69
+00:03:14,780 --> 00:03:18,900
+Oh, so cautiously, cautiously, for the hinges creaked.
+
+70
+00:03:19,480 --> 00:03:21,540
+I undid it just so much that a
+
+71
+00:03:21,540 --> 00:03:25,280
+single thin ray fell upon the vulture eye.
+
+72
+00:03:26,140 --> 00:03:28,780
+And this I did for seven long nights,
+
+73
+00:03:29,440 --> 00:03:31,800
+Every night, just at midnight.
+
+74
+00:03:32,600 --> 00:03:36,840
+But I found the eye always closed, And
+
+75
+00:03:36,840 --> 00:03:38,860
+so it is impossible to do the work.
+
+76
+00:03:39,660 --> 00:03:41,900
+For it was not the old man who
+
+77
+00:03:41,900 --> 00:03:44,180
+vexed me, but his evil eye.
+
+78
+00:03:44,420 --> 00:03:46,980
+And every morning, when the day broke, I
+
+79
+00:03:46,980 --> 00:03:49,800
+went boldly into the chamber and spoke courageously
+
+80
+00:03:49,800 --> 00:03:51,880
+to him, Calling him by name in a
+
+81
+00:03:51,880 --> 00:03:54,980
+hearty tone, And inquiring how he had passed
+
+82
+00:03:54,980 --> 00:03:55,480
+the night.
+
+83
+00:03:56,600 --> 00:03:59,620
+So you see, he would have been a
+
+84
+00:03:59,620 --> 00:04:02,940
+very profound old man, Indeed, to suspect that
+
+85
+00:04:02,940 --> 00:04:05,840
+every night, just at twelve, I looked in
+
+86
+00:04:05,840 --> 00:04:07,900
+upon him while he slept.
+
+87
+00:04:09,590 --> 00:04:13,130
+Upon the eighth night, I was more than
+
+88
+00:04:13,130 --> 00:04:15,550
+usually cautious in opening the door.
+
+89
+00:04:16,470 --> 00:04:20,350
+A watch's minute hand moves more quickly than
+
+90
+00:04:20,350 --> 00:04:21,150
+did mine.
+
+91
+00:04:22,670 --> 00:04:24,990
+Never before that night had I felt the
+
+92
+00:04:24,990 --> 00:04:29,110
+extent of my own powers of my sagacity.
+
+93
+00:04:30,770 --> 00:04:34,690
+I could scarcely contain my feelings of triumph
+
+94
+00:04:34,690 --> 00:04:41,090
+to think that there I was, Opening the
+
+95
+00:04:41,090 --> 00:04:46,490
+door, little by little, And he not even
+
+96
+00:04:46,490 --> 00:04:49,330
+to dream of my secret deeds or thoughts.
+
+97
+00:04:50,490 --> 00:04:53,530
+I fairly chuckled at the idea, and perhaps
+
+98
+00:04:53,530 --> 00:04:55,870
+he heard me, For he moved on the
+
+99
+00:04:55,870 --> 00:04:57,390
+bed suddenly as if startled.
+
+100
+00:04:58,910 --> 00:05:01,090
+Now you may think that I drew back,
+
+101
+00:05:02,390 --> 00:05:03,170
+but no.
+
+102
+00:05:04,470 --> 00:05:07,510
+His room was as black as pitch with
+
+103
+00:05:07,510 --> 00:05:12,290
+a thick darkness, The shutters of clothes fastened
+
+104
+00:05:12,290 --> 00:05:16,430
+through fear of robbers, And so I knew
+
+105
+00:05:16,430 --> 00:05:18,270
+that he could not see the opening of
+
+106
+00:05:18,270 --> 00:05:22,110
+the door, And I kept pushing it on,
+
+107
+00:05:23,310 --> 00:05:23,810
+steadily.
+
+108
+00:05:26,790 --> 00:05:32,660
+Steadily I had my head in, and was
+
+109
+00:05:32,660 --> 00:05:35,840
+about to open the lantern, When my thumb
+
+110
+00:05:35,840 --> 00:05:38,200
+slipped upon the tin fastening, And the old
+
+111
+00:05:38,200 --> 00:05:41,760
+man sprang up in bed, crying out, Who's
+
+112
+00:05:41,760 --> 00:05:42,220
+there?
+
+113
+00:05:43,800 --> 00:05:46,740
+I kept quite still and said nothing.
+
+114
+00:05:49,040 --> 00:05:51,040
+For a whole hour I did not move
+
+115
+00:05:51,040 --> 00:05:54,240
+a muscle, And in the meantime I did
+
+116
+00:05:54,240 --> 00:05:56,080
+not hear him lie down.
+
+117
+00:05:57,300 --> 00:05:59,900
+He was sitting up in the bed, listening,
+
+118
+00:06:00,680 --> 00:06:04,820
+just as I have done, Night after night,
+
+119
+00:06:05,780 --> 00:06:08,300
+Hearkening to the death of watches and the
+
+120
+00:06:08,300 --> 00:06:08,720
+war.
+
+121
+00:06:13,490 --> 00:06:17,050
+Presently I heard a slight groan, And I
+
+122
+00:06:17,050 --> 00:06:20,050
+knew it was the groan of mortal terror.
+
+123
+00:06:20,590 --> 00:06:23,370
+It was not a groan of pain or
+
+124
+00:06:23,370 --> 00:06:26,230
+of grief, oh no, It was a low
+
+125
+00:06:26,230 --> 00:06:28,950
+stifled sound that arises from the bottom of
+
+126
+00:06:28,950 --> 00:06:31,630
+the soul When overcharged with awe.
+
+127
+00:06:32,550 --> 00:06:34,830
+I knew the sound well.
+
+128
+00:06:36,310 --> 00:06:40,590
+Many a night, just at midnight, When all
+
+129
+00:06:40,590 --> 00:06:44,310
+the world slept, It has wowed up from
+
+130
+00:06:44,310 --> 00:06:49,030
+my own bosom, Deepening with its dreadful echo
+
+131
+00:06:49,030 --> 00:06:52,370
+the terrors that distracted me.
+
+132
+00:06:53,550 --> 00:06:55,590
+I say I knew it well.
+
+133
+00:06:56,690 --> 00:07:00,610
+I knew what the old man felt, and
+
+134
+00:07:00,610 --> 00:07:04,650
+pitied him, Although I chuckled at heart.
+
+135
+00:07:05,550 --> 00:07:08,110
+I knew that he had been lying awake
+
+136
+00:07:08,110 --> 00:07:11,890
+ever since the first slight noise When he
+
+137
+00:07:11,890 --> 00:07:13,290
+had turned in the bed.
+
+138
+00:07:14,170 --> 00:07:17,450
+His fears had been ever since growing upon
+
+139
+00:07:17,450 --> 00:07:17,790
+him.
+
+140
+00:07:18,710 --> 00:07:21,610
+He had been trying to fancy them causeless,
+
+141
+00:07:21,930 --> 00:07:23,410
+but could not.
+
+142
+00:07:24,530 --> 00:07:28,570
+He had been saying to himself, It is
+
+143
+00:07:28,570 --> 00:07:31,170
+nothing but the wind in the chimney, It
+
+144
+00:07:31,170 --> 00:07:34,430
+is only a mouse crossing the floor, Or
+
+145
+00:07:34,430 --> 00:07:36,470
+it is merely a cricket which has made
+
+146
+00:07:36,470 --> 00:07:37,330
+a single chirp.
+
+147
+00:07:38,210 --> 00:07:42,170
+Yes, he had been trying to comfort himself
+
+148
+00:07:42,170 --> 00:07:47,030
+with these suppositions, But it found all in
+
+149
+00:07:47,030 --> 00:07:52,280
+vain, all in vain.
+
+150
+00:07:52,780 --> 00:07:58,640
+Because death, in approaching him, Had stalked with
+
+151
+00:07:58,640 --> 00:08:02,360
+his black shadow before him, And enveloped the
+
+152
+00:08:02,360 --> 00:08:02,800
+victim.
+
+153
+00:08:03,660 --> 00:08:06,680
+And it was the mournful influence of the
+
+154
+00:08:06,680 --> 00:08:10,400
+unperceived shadow That caused him to feel, Although
+
+155
+00:08:10,400 --> 00:08:15,000
+he neither saw nor heard, To feel the
+
+156
+00:08:15,000 --> 00:08:19,880
+presence of my head within the room.
+
+157
+00:08:22,480 --> 00:08:25,980
+When I had waited a long time, Very
+
+158
+00:08:25,980 --> 00:08:31,299
+patiently, without hearing him lie down, I resolved
+
+159
+00:08:31,299 --> 00:08:34,480
+to open a little, A very, very little
+
+160
+00:08:34,480 --> 00:08:35,780
+crevice in the lantern.
+
+161
+00:08:36,580 --> 00:08:38,780
+So I opened it.
+
+162
+00:08:39,880 --> 00:08:44,460
+You cannot imagine how stealthily, stealthily, Until, at
+
+163
+00:08:44,460 --> 00:08:47,760
+length, the simple dim ray, Like the thread
+
+164
+00:08:47,760 --> 00:08:50,800
+of a spider, Shot from out the crevice
+
+165
+00:08:50,800 --> 00:08:54,340
+and fell full upon the vulture eye.
+
+166
+00:08:55,720 --> 00:09:01,460
+It was open, wide, wide open, And I
+
+167
+00:09:01,460 --> 00:09:03,960
+grew furious as I gazed upon it.
+
+168
+00:09:03,960 --> 00:09:07,700
+I saw it with perfect distinctness, All a
+
+169
+00:09:07,700 --> 00:09:10,020
+dull blue, with a hideous veil over it
+
+170
+00:09:10,020 --> 00:09:12,600
+That chilled the very marrow in my bones.
+
+171
+00:09:12,960 --> 00:09:15,620
+But I could see nothing else of the
+
+172
+00:09:15,620 --> 00:09:20,840
+old man's face or person, For I had
+
+173
+00:09:20,840 --> 00:09:25,180
+directed the ray, as if by instinct, Precisely
+
+174
+00:09:25,180 --> 00:09:27,620
+upon the damned spot.
+
+175
+00:09:28,500 --> 00:09:32,120
+And I have not told you That what
+
+176
+00:09:32,120 --> 00:09:36,220
+you mistake for madness is but over-acuteness
+
+177
+00:09:36,220 --> 00:09:37,180
+of the sense.
+
+178
+00:09:38,460 --> 00:09:41,980
+Now I say, there came to my ears
+
+179
+00:09:41,980 --> 00:09:44,600
+a low, dull, quick sound, Such as a
+
+180
+00:09:44,600 --> 00:09:46,820
+watch makes when enveloped in cotton.
+
+181
+00:09:47,080 --> 00:09:48,920
+I knew that sound well, too.
+
+182
+00:09:50,200 --> 00:09:52,860
+It was the beating of the old man's
+
+183
+00:09:52,860 --> 00:09:53,500
+heart.
+
+184
+00:09:53,860 --> 00:09:56,180
+It increased my fury as the beating of
+
+185
+00:09:56,180 --> 00:09:59,340
+a drum Stimulates the soldier into courage.
+
+186
+00:10:01,210 --> 00:10:04,640
+But even yet I refrained and kept still.
+
+187
+00:10:05,520 --> 00:10:08,280
+I scarcely breathed.
+
+188
+00:10:09,040 --> 00:10:11,460
+I held the lantern motionless.
+
+189
+00:10:12,820 --> 00:10:16,660
+I tried how steadily I could maintain the
+
+190
+00:10:16,660 --> 00:10:17,880
+ray upon the eye.
+
+191
+00:10:18,940 --> 00:10:24,000
+Meanwhile, the hellish tattoo of the heart increased.
+
+192
+00:10:25,120 --> 00:10:27,800
+It grew quicker and quicker and louder and
+
+193
+00:10:27,800 --> 00:10:29,820
+louder every instant.
+
+194
+00:10:30,780 --> 00:10:34,380
+The old man's terror must have been extreme.
+
+195
+00:10:35,320 --> 00:10:38,860
+It grew louder, I say, louder every moment.
+
+196
+00:10:40,040 --> 00:10:41,120
+Do you mark me well?
+
+197
+00:10:41,220 --> 00:10:43,200
+I have told you that I am nervous.
+
+198
+00:10:43,300 --> 00:10:44,240
+So I am.
+
+199
+00:10:44,600 --> 00:10:46,700
+And now, at the dead hour of night,
+
+200
+00:10:47,100 --> 00:10:49,820
+Amid the dreadful silence of that old house,
+
+201
+00:10:50,300 --> 00:10:53,180
+So strange a noise as this excited me
+
+202
+00:10:53,180 --> 00:10:54,920
+to uncontrollable terror.
+
+203
+00:10:56,520 --> 00:11:00,140
+Yet for some minutes longer I refrained And
+
+204
+00:11:00,140 --> 00:11:01,020
+stood still.
+
+205
+00:11:03,140 --> 00:11:05,920
+But the beating grew louder, louder.
+
+206
+00:11:06,480 --> 00:11:08,820
+I thought the heart must burst.
+
+207
+00:11:09,240 --> 00:11:11,940
+And now a new anxiety seized me.
+
+208
+00:11:12,780 --> 00:11:15,240
+The sound would be heard by a neighbor.
+
+209
+00:11:16,200 --> 00:11:18,540
+The old man's hour had come.
+
+210
+00:11:19,480 --> 00:11:21,860
+With a loud yell I threw open the
+
+211
+00:11:21,860 --> 00:11:23,580
+lantern and leaped into the room.
+
+212
+00:11:23,980 --> 00:11:26,020
+He shrieked once, once only.
+
+213
+00:11:26,320 --> 00:11:27,780
+In an instant I dragged him to the
+
+214
+00:11:27,780 --> 00:11:29,760
+floor and pulled the heavy bed over him.
+
+215
+00:11:30,330 --> 00:11:35,100
+I then smiled gaily to find the deed
+
+216
+00:11:35,100 --> 00:11:36,680
+so far done.
+
+217
+00:11:38,210 --> 00:11:43,260
+But for many minutes the heartbeat on with
+
+218
+00:11:43,260 --> 00:11:44,580
+a muffled sound.
+
+219
+00:11:46,000 --> 00:11:48,200
+This, however, did not vex me.
+
+220
+00:11:49,040 --> 00:11:51,240
+It would not be heard through the wall.
+
+221
+00:11:52,060 --> 00:11:53,680
+At length it ceased.
+
+222
+00:11:54,660 --> 00:11:56,900
+The old man was dead.
+
+223
+00:11:59,040 --> 00:12:02,040
+I removed the bed and examined the corpse.
+
+224
+00:12:03,180 --> 00:12:05,320
+Yes, he was stone.
+
+225
+00:12:06,280 --> 00:12:07,720
+Stone dead.
+
+226
+00:12:10,120 --> 00:12:13,160
+I placed my hand upon the heart and
+
+227
+00:12:13,160 --> 00:12:15,020
+held it there many minutes.
+
+228
+00:12:15,880 --> 00:12:17,420
+There was no pulsation.
+
+229
+00:12:18,400 --> 00:12:19,740
+He was stone dead.
+
+230
+00:12:20,640 --> 00:12:23,220
+His eye would trouble me no more.
+
+231
+00:12:26,270 --> 00:12:29,310
+If still you think me mad, you will
+
+232
+00:12:29,310 --> 00:12:31,870
+think so no longer when I describe the
+
+233
+00:12:31,870 --> 00:12:34,870
+wise precaution I took for the concealment of
+
+234
+00:12:34,870 --> 00:12:35,350
+the body.
+
+235
+00:12:36,890 --> 00:12:39,350
+The night waned and I worked hastily but
+
+236
+00:12:39,350 --> 00:12:40,330
+in silence.
+
+237
+00:12:41,090 --> 00:12:43,370
+First of all I dismembered the corpse.
+
+238
+00:12:44,150 --> 00:12:45,890
+I cut off the head and the arms
+
+239
+00:12:45,890 --> 00:12:46,750
+and the legs.
+
+240
+00:12:47,910 --> 00:12:50,330
+I then took up three planks from the
+
+241
+00:12:50,330 --> 00:12:53,570
+flooring of the chamber and deposited all between
+
+242
+00:12:53,570 --> 00:12:54,610
+the scantlings.
+
+243
+00:12:55,370 --> 00:12:58,450
+I then replaced the boards so cleverly, so
+
+244
+00:12:58,450 --> 00:13:02,070
+cunningly, that no human eye, not even his,
+
+245
+00:13:02,470 --> 00:13:04,350
+could have detected anything wrong.
+
+246
+00:13:05,830 --> 00:13:08,390
+There was nothing to wash out, no stain
+
+247
+00:13:08,390 --> 00:13:10,470
+of any kind, no blood-spot, whatever.
+
+248
+00:13:11,290 --> 00:13:13,950
+I had been too wary for that.
+
+249
+00:13:14,890 --> 00:13:16,610
+A tub had caught all.
+
+250
+00:13:19,630 --> 00:13:22,690
+When I had made an end of these
+
+251
+00:13:22,690 --> 00:13:24,530
+neighbours it was four o'clock.
+
+252
+00:13:25,170 --> 00:13:27,190
+Still dark as midnight.
+
+253
+00:13:28,790 --> 00:13:31,510
+As the bell sounded the hour there came
+
+254
+00:13:31,510 --> 00:13:32,990
+a knocking at the street door.
+
+255
+00:13:33,870 --> 00:13:35,650
+I went down to open it with a
+
+256
+00:13:35,650 --> 00:13:38,610
+light heart, for what had I now to
+
+257
+00:13:38,610 --> 00:13:39,090
+fear?
+
+258
+00:13:40,650 --> 00:13:43,490
+There entered three men who introduced themselves with
+
+259
+00:13:43,490 --> 00:13:47,130
+perfect suavity as officers of the police.
+
+260
+00:13:49,940 --> 00:13:51,640
+A shriek had been heard by a neighbour
+
+261
+00:13:51,640 --> 00:13:52,500
+during the night.
+
+262
+00:13:53,460 --> 00:13:55,940
+Suspicion of foul play had been aroused.
+
+263
+00:13:56,820 --> 00:13:59,020
+Information had been lodged at the police office,
+
+264
+00:13:59,160 --> 00:14:01,300
+and they, the officers, had been deputed to
+
+265
+00:14:01,300 --> 00:14:02,240
+search the premises.
+
+266
+00:14:04,320 --> 00:14:05,480
+I smiled.
+
+267
+00:14:06,220 --> 00:14:07,960
+For what had I to fear?
+
+268
+00:14:08,780 --> 00:14:10,580
+I bade the gentlemen welcome.
+
+269
+00:14:11,780 --> 00:14:13,880
+The shriek, I said, was my own in
+
+270
+00:14:13,880 --> 00:14:14,520
+a dream.
+
+271
+00:14:15,380 --> 00:14:18,140
+The old man I mentioned was absent in
+
+272
+00:14:18,140 --> 00:14:18,700
+the country.
+
+273
+00:14:21,420 --> 00:14:23,660
+I took my visitors all over the house.
+
+274
+00:14:23,860 --> 00:14:26,700
+I bade them search, search well.
+
+275
+00:14:27,260 --> 00:14:29,400
+I led them at length to his chamber.
+
+276
+00:14:29,880 --> 00:14:32,900
+I showed them his treasures, secure, undisturbed.
+
+277
+00:14:33,400 --> 00:14:35,560
+In the enthusiasm of my confidence I brought
+
+278
+00:14:35,560 --> 00:14:39,060
+chairs into the room and desired them here
+
+279
+00:14:39,060 --> 00:14:42,660
+to rest from their fatigues, while I myself,
+
+280
+00:14:42,920 --> 00:14:45,720
+in the wild audacity of my perfect triumph,
+
+281
+00:14:45,900 --> 00:14:49,080
+placed my own seat upon the very spot
+
+282
+00:14:49,080 --> 00:14:52,580
+beneath which reposed the corpse of the victim.
+
+283
+00:14:55,130 --> 00:14:56,770
+The officers were satisfied.
+
+284
+00:14:56,770 --> 00:14:59,730
+My manner had convinced them.
+
+285
+00:15:00,850 --> 00:15:03,150
+I was singly at ease.
+
+286
+00:15:03,930 --> 00:15:06,950
+They sat, and while I answered cheerily, they
+
+287
+00:15:06,950 --> 00:15:09,110
+chatted of familiar things.
+
+288
+00:15:09,970 --> 00:15:13,090
+But ere long I felt myself getting pale
+
+289
+00:15:13,090 --> 00:15:14,650
+and wished them gone.
+
+290
+00:15:15,090 --> 00:15:17,310
+My head ached, and I fancied a ringing
+
+291
+00:15:17,310 --> 00:15:19,890
+in my ears, but still they sat and
+
+292
+00:15:19,890 --> 00:15:20,930
+still chatted.
+
+293
+00:15:21,350 --> 00:15:23,110
+The ringing became more distinct.
+
+294
+00:15:23,410 --> 00:15:25,730
+It continued and became more distinct.
+
+295
+00:15:25,730 --> 00:15:27,910
+I talked more freely to get rid of
+
+296
+00:15:27,910 --> 00:15:31,770
+the feeling, but it continued and gained definiteness,
+
+297
+00:15:32,210 --> 00:15:35,370
+until at length I found that the noise
+
+298
+00:15:35,370 --> 00:15:38,010
+was not within my ears.
+
+299
+00:15:40,910 --> 00:15:44,310
+No doubt I now grew very pale, but
+
+300
+00:15:44,310 --> 00:15:46,690
+I talked more fluently and with a heightened
+
+301
+00:15:46,690 --> 00:15:49,330
+voice, yet the sound increased, and what could
+
+302
+00:15:49,330 --> 00:15:49,890
+I do?
+
+303
+00:15:50,390 --> 00:15:54,150
+It was a low, dull, quick sound, much
+
+304
+00:15:54,150 --> 00:15:56,850
+such a sound as a watch makes when
+
+305
+00:15:56,850 --> 00:15:58,450
+enveloped in cotton.
+
+306
+00:15:59,530 --> 00:16:01,750
+I gasped for a breath, and yet the
+
+307
+00:16:01,750 --> 00:16:03,050
+officers heard it not.
+
+308
+00:16:03,350 --> 00:16:06,530
+I talked more quickly, more vehemently, but the
+
+309
+00:16:06,530 --> 00:16:07,890
+noise steadily increased.
+
+310
+00:16:08,310 --> 00:16:11,110
+I arose and argued about trifles in a
+
+311
+00:16:11,110 --> 00:16:14,590
+high key, and with violent gesticulations, but the
+
+312
+00:16:14,590 --> 00:16:16,110
+noise steadily increased.
+
+313
+00:16:16,930 --> 00:16:19,810
+Why would they not be gone?
+
+314
+00:16:19,810 --> 00:16:22,570
+I paced the floor to and fro with
+
+315
+00:16:22,570 --> 00:16:25,450
+heavy strides as if excited to fury by
+
+316
+00:16:25,450 --> 00:16:27,770
+the observation of the men, but the noise
+
+317
+00:16:27,770 --> 00:16:28,690
+steadily increased.
+
+318
+00:16:29,190 --> 00:16:31,070
+Oh God, what could I do?
+
+319
+00:16:31,310 --> 00:16:33,490
+I foamed, I raved, I swore.
+
+320
+00:16:34,090 --> 00:16:36,050
+I swung the chair upon which I had
+
+321
+00:16:36,050 --> 00:16:38,130
+been sitting and greeted it upon the boards,
+
+322
+00:16:38,310 --> 00:16:41,450
+but the noise arose over all and continually
+
+323
+00:16:41,450 --> 00:16:42,430
+increased.
+
+324
+00:16:43,010 --> 00:16:46,950
+It grew louder, louder, louder, and still the
+
+325
+00:16:46,950 --> 00:16:48,910
+men chatted pleasantly and smiled.
+
+326
+00:16:48,910 --> 00:16:52,350
+Was it possible they heard not?
+
+327
+00:16:53,390 --> 00:16:57,770
+Almighty God, no, no, they heard, they suspected,
+
+328
+00:16:57,870 --> 00:16:58,530
+they knew.
+
+329
+00:16:58,950 --> 00:17:00,870
+They were making a mockery of my horror.
+
+330
+00:17:01,330 --> 00:17:03,609
+This I thought, and this I think.
+
+331
+00:17:04,349 --> 00:17:07,329
+But anything was better than this agony.
+
+332
+00:17:07,890 --> 00:17:10,630
+Anything was more terrible than this derision.
+
+333
+00:17:11,130 --> 00:17:14,650
+I could bear those hypocritical smiles no longer.
+
+334
+00:17:14,849 --> 00:17:17,270
+I felt that I must scream or die,
+
+335
+00:17:17,270 --> 00:17:21,589
+and now again hark louder, louder, louder.
+
+336
+00:17:22,470 --> 00:17:23,990
+Villains, I shrieked.
+
+337
+00:17:25,069 --> 00:17:26,630
+Dissemble no more.
+
+338
+00:17:27,170 --> 00:17:28,250
+I admit the deed.
+
+339
+00:17:28,390 --> 00:17:30,090
+Tear up the planks here, here.
+
+340
+00:17:30,530 --> 00:17:32,510
+It is the beating of this hideous heart.
+
+341
+00:17:36,410 --> 00:17:38,450
+End of THE TAILTAIL HEART

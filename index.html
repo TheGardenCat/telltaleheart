@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>The Tell-Tale Heart | Immersive Audio Player</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none; /* cleaner for TV remote interaction, text can still be selected if needed */
+    }
+
+    body {
+      background: radial-gradient(circle at 20% 30%, #0a0404 0%, #000000 100%);
+      font-family: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ece4d7;
+      position: relative;
+    }
+
+    /* antique texture overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" opacity="0.08"><path d="M0 0 L400 0 L400 300 L0 300 Z" fill="none" stroke="%23993333" stroke-width="0.5"/><circle cx="50" cy="50" r="8" fill="%23882222" opacity="0.4"/><circle cx="320" cy="210" r="12" fill="%23661111" opacity="0.3"/><path d="M120 160 L180 120 L210 180 L160 210 Z" fill="%23aa4444" opacity="0.15"/><line x1="30" y1="280" x2="370" y2="40" stroke="%23883333" stroke-width="1.2" opacity="0.2"/></svg>');
+      background-repeat: repeat;
+      pointer-events: none;
+    }
+
+    /* main container — no scrolling, fixed to viewport */
+    .player-container {
+      width: 92vw;
+      max-width: 1400px;
+      height: 90vh;
+      background: rgba(10, 5, 5, 0.65);
+      backdrop-filter: blur(3px);
+      border-radius: 2.5rem;
+      border: 1px solid rgba(180, 60, 60, 0.6);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(120, 30, 30, 0.2);
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem 2rem;
+      transition: all 0.2s;
+      overflow: hidden;
+    }
+
+    /* header artsy */
+    .title-section {
+      text-align: center;
+      border-bottom: 1px dashed #a54444;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.5rem;
+      flex-shrink: 0;
+    }
+    .title-section h1 {
+      font-size: 2.3rem;
+      letter-spacing: 6px;
+      font-weight: 400;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #e6cfb0, #b55a5a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 6px rgba(0,0,0,0.5);
+    }
+    .title-section p {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #caa8a8;
+      letter-spacing: 1px;
+    }
+
+    /* two-column flexible grid — no overflow */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.7fr;
+      gap: 2rem;
+      flex: 1;
+      min-height: 0;  /* prevents overflow */
+      overflow: hidden;
+    }
+
+    /* left side: book cover + uploads */
+    .cover-area {
+      background: rgba(0,0,0,0.4);
+      border-radius: 2rem;
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      border: 1px solid #7a3b3b;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+    }
+    .frame-picture {
+      background: #1f0f0f;
+      border-radius: 1.2rem;
+      padding: 0.5rem;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      max-height: 55vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 2px rgba(200, 100, 100, 0.4), 0 8px 12px black;
+    }
+    .book-cover-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 0.8rem;
+      transition: transform 0.2s ease;
+    }
+    .upload-group {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .custom-file-label {
+      background: #2c1313;
+      border: 1px solid #aa5a5a;
+      color: #f2cfcf;
+      padding: 0.55rem 0;
+      text-align: center;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
+      backdrop-filter: blur(4px);
+      font-family: monospace;
+    }
+    .custom-file-label:hover {
+      background: #5e2a2a;
+      border-color: #d98c8c;
+      color: white;
+    }
+    input[type="file"] {
+      display: none;
+    }
+    .note {
+      font-size: 0.7rem;
+      text-align: center;
+      color: #b78686;
+      margin-top: 0.2rem;
+    }
+
+    /* right side: audio + subtitles display */
+    .audio-subtitle-area {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      background: rgba(0,0,0,0.25);
+      border-radius: 2rem;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid #742e2e;
+      overflow-y: auto;  /* safe but disables scroll? we force inner elements not to overflow, but this area itself has auto only if needed — ensure no global page scrolling */
+      scrollbar-width: none;
+    }
+    .audio-subtitle-area::-webkit-scrollbar {
+      display: none;
+    }
+    audio {
+      width: 100%;
+      background: #1c0b0b;
+      border-radius: 60px;
+      outline: none;
+      filter: drop-shadow(0 2px 6px black);
+    }
+    audio::-webkit-media-controls-panel {
+      background-color: #2f1a1a;
+    }
+    .subtitle-stage {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 1.8rem;
+      padding: 1.2rem 1rem;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 8px solid #a13e3e;
+      box-shadow: inset 0 0 12px rgba(0,0,0,0.6), 0 4px 12px black;
+    }
+    .subtitle-text {
+      font-size: 4rem;
+      line-height: 1.35;
+      font-weight: 500;
+      text-align: center;
+      color: #f7e5cf;
+      text-shadow: 2px 2px 3px #1f0404;
+      word-break: break-word;
+      letter-spacing: 0.02em;
+      transition: all 0.2s;
+    }
+    .subtitle-placeholder {
+      font-size: 1.2rem;
+      opacity: 0.7;
+      font-style: italic;
+      text-align: center;
+    }
+    .cue-status {
+      font-size: 0.75rem;
+      text-align: center;
+      margin-top: 0.75rem;
+      color: #be8b8b;
+      font-family: monospace;
+    }
+    .file-status {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.7rem;
+      background: #1f0f0f70;
+      padding: 6px 12px;
+      border-radius: 40px;
+    }
+    .badge {
+      color: #d49c9c;
+    }
+    button.clear-btn {
+      background: none;
+      border: 1px solid #965a5a;
+      color: #ceabab;
+      border-radius: 40px;
+      padding: 4px 12px;
+      cursor: pointer;
+      font-family: monospace;
+      transition: 0.2s;
+    }
+    button.clear-btn:hover {
+      background: #6a2e2e;
+      color: white;
+    }
+    hr {
+      border-color: #642a2a;
+      margin: 4px 0;
+    }
+    @media (max-width: 800px) {
+      .main-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        overflow-y: auto;
+      }
+      .player-container {
+        height: 95vh;
+        padding: 1rem;
+      }
+      .subtitle-text {
+        font-size: 1.2rem;
+      }
+    }
+    /* subtle heartbeat animation for artsy vibe */
+    @keyframes faintPulse {
+      0% { text-shadow: 0 0 0px #a52a2a; }
+      100% { text-shadow: 0 0 6px #b33b3b; }
+    }
+    .title-section h1 {
+      animation: faintPulse 3s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+<div class="player-container">
+  <div class="title-section">
+    <h1>THE TELL-TALE HEART</h1>
+    <p>〣 immersive audiobook theatre 〣</p>
+  </div>
+
+  <div class="main-grid">
+    <!-- LEFT COLUMN: BOOK COVER + UPLOAD -->
+    <div class="cover-area">
+      <div class="frame-picture">
+        <img id="bookCover" class="book-cover-img" alt="book cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23170a0a'/%3E%3Cpath d='M90 70 L310 70 L310 430 L90 430 Z' fill='%23240f0f' stroke='%23994444' stroke-width='2'/%3E%3Ctext x='200' y='180' font-family='Georgia' font-size='34' fill='%23b77c7c' text-anchor='middle' font-weight='bold'%3ETHE%3C/text%3E%3Ctext x='200' y='230' font-family='Georgia' font-size='38' fill='%23c57a7a' text-anchor='middle' font-weight='bold'%3ETELL-TALE%3C/text%3E%3Ctext x='200' y='280' font-family='Georgia' font-size='36' fill='%23b86b6b' text-anchor='middle'%3EHEART%3C/text%3E%3Cpath d='M140 350 L260 350 L200 400 Z' fill='%238a2f2f' opacity='0.7'/%3E%3Ccircle cx='200' cy='380' r='12' fill='%23aa5555'/%3E%3C/svg%3E" />
+      </div>
+      <div class="upload-group">
+        <label class="custom-file-label" for="coverUpload">📖 upload book cover</label>
+        <input type="file" id="coverUpload" accept="image/jpeg, image/png, image/webp, image/jpg">
+        
+      </div>
+      <div class="note" style="margin-top:-0.2rem;">🎭 “Villains! dissemble no more!”</div>
+    </div>
+
+    <!-- RIGHT COLUMN: AUDIO PLAYER + SUBTITLES + LOADERS -->
+    <div class="audio-subtitle-area">
+      <audio id="audioPlayer" controls preload="metadata" style="width:100%">
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="file-status">
+        <span>🎙️ <span id="audioFileName" class="badge">no audio loaded</span></span>
+        <span>📜 <span id="subtitleFileName" class="badge">no subtitles</span></span>
+        <button id="resetAllBtn" class="clear-btn">↺ reset all</button>
+      </div>
+
+      <div class="upload-group" style="flex-direction: row; gap: 0.8rem; justify-content: space-between;">
+        <label class="custom-file-label" style="flex:1;" for="audioUpload">🎧 load audiobook (mp3/m4a/ogg)</label>
+        <label class="custom-file-label" style="flex:1;" for="subtitleUpload">📝 load subtitles (.srt / .vtt)</label>
+        <input type="file" id="audioUpload" accept="audio/mpeg, audio/mp4, audio/ogg, audio/wav, audio/m4a">
+        <input type="file" id="subtitleUpload" accept=".srt,.vtt,text/vtt,text/srt">
+      </div>
+
+      <!-- SUBTITLE DISPLAY (big screen cinema style) -->
+      <div class="subtitle-stage">
+        <div id="subtitleDisplay" class="subtitle-text">
+          <span class="subtitle-placeholder">✦  load a subtitle file & audio  ✦<br>subtitles will appear here in perfect sync</span>
+        </div>
+        <div id="cueStatusLine" class="cue-status">⌛ waiting for cues</div>
+      </div>
+      
+    </div>
+  </div>
+  <footer style="text-align: center; font-size:0.7rem; margin-top:0.8rem; color:#ab6d6d; flex-shrink:0;">
+    🖤 Edgar Allan Poe — immersive narration | no scrolling, pure theater
+  </footer>
+</div>
+
+<script>
+  // DOM elements
+  const audio = document.getElementById('audioPlayer');
+  const audioUpload = document.getElementById('audioUpload');
+  const subtitleUpload = document.getElementById('subtitleUpload');
+  const coverUpload = document.getElementById('coverUpload');
+  const bookCoverImg = document.getElementById('bookCover');
+  const subtitleDisplayDiv = document.getElementById('subtitleDisplay');
+  const cueStatusSpan = document.getElementById('cueStatusLine');
+  const audioFileNameSpan = document.getElementById('audioFileName');
+  const subtitleFileNameSpan = document.getElementById('subtitleFileName');
+  const resetBtn = document.getElementById('resetAllBtn');
+
+  // Cue storage
+  let cues = [];           // array of {start, end, text}
+  let activeCueIndex = -1;
+  let currentSubtitleRaw = '';
+  let audioBlobUrl = null;
+  
+  // Helper: format time for debug
+  function formatTime(seconds) {
+    let mins = Math.floor(seconds / 60);
+    let secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2,'0')}`;
+  }
+
+  // Update subtitle based on audio.currentTime
+  function updateSubtitlesByTime() {
+    if (!cues.length) {
+      if (!subtitleDisplayDiv.innerHTML.includes("load a subtitle")) {
+        // only set placeholder if no cues
+        if (subtitleDisplayDiv.innerText !== '✦  load a subtitle file & audio  ✦\nsubtitles will appear here in perfect sync')
+          subtitleDisplayDiv.innerHTML = '<span class="subtitle-placeholder">✦  load a subtitle file & audio  ✦<br>subtitles will appear here in perfect sync</span>';
+        cueStatusSpan.innerText = '📭 no subtitles loaded — upload .srt/.vtt';
+      }
+      return;
+    }
+    
+    const currentTime = audio.currentTime;
+    let activeCue = null;
+    let newIndex = -1;
+    
+    // find first cue where start <= currentTime <= end
+    for (let i = 0; i < cues.length; i++) {
+      if (currentTime >= cues[i].start && currentTime <= cues[i].end) {
+        activeCue = cues[i];
+        newIndex = i;
+        break;
+      }
+    }
+    
+    if (activeCue) {
+      const displayText = activeCue.text;
+      if (subtitleDisplayDiv.innerHTML !== displayText) {
+        subtitleDisplayDiv.innerHTML = displayText.replace(/\n/g, '<br>');
+        subtitleDisplayDiv.classList.add('active-cue');
+      }
+      activeCueIndex = newIndex;
+      cueStatusSpan.innerHTML = `🎭 cue: ${formatTime(activeCue.start)} → ${formatTime(activeCue.end)} &nbsp;&nbsp;⚡ synced`;
+    } else {
+      // no active cue: show subtle waiting text but not erase permanently
+      if (activeCueIndex !== -1 || subtitleDisplayDiv.innerHTML.includes("⚡")) {
+        subtitleDisplayDiv.innerHTML = '<span style="opacity:0.6; font-style:italic;">⋯ awaiting next passage ⋯</span>';
+        cueStatusSpan.innerHTML = `⏳ between cues — ${cues.length} subtitles loaded`;
+        activeCueIndex = -1;
+      } else if (!subtitleDisplayDiv.innerHTML.includes("awaiting next") && cues.length > 0 && !subtitleDisplayDiv.innerHTML.includes("load a subtitle")) {
+        // subtle keep placeholder
+        if(subtitleDisplayDiv.innerHTML === '<span class="subtitle-placeholder">✦  load a subtitle file & audio  ✦<br>subtitles will appear here in perfect sync</span>')
+          subtitleDisplayDiv.innerHTML = '<span style="opacity:0.6; font-style:italic;">press play & subtitles will flow</span>';
+      }
+    }
+  }
+  
+  // timeupdate event handler
+  function onTimeUpdate() {
+    updateSubtitlesByTime();
+  }
+  
+  // parse SRT string to cues array
+  function parseSRT(data) {
+    const blocks = data.trim().split(/\r?\n\r?\n/);
+    const cueArray = [];
+    for (let block of blocks) {
+      const lines = block.split(/\r?\n/);
+      if (lines.length < 2) continue;
+      // find timestamp line: contains '-->'
+      let timeLineIndex = -1;
+      for (let i=0; i<lines.length; i++) {
+        if (lines[i].includes('-->')) {
+          timeLineIndex = i;
+          break;
+        }
+      }
+      if (timeLineIndex === -1) continue;
+      const timeStr = lines[timeLineIndex];
+      const times = timeStr.split('-->');
+      if (times.length < 2) continue;
+      const start = parseTimeToSeconds(times[0].trim());
+      const end = parseTimeToSeconds(times[1].trim());
+      const textLines = lines.slice(timeLineIndex+1);
+      let text = textLines.join('\n').trim();
+      if (text === "") continue;
+      cueArray.push({ start, end, text });
+    }
+    return cueArray;
+  }
+  
+  // parse VTT (simplified, remove WEBVTT header)
+  function parseVTT(data) {
+    let cleaned = data.replace(/^\uFEFF/, '');
+    const lines = cleaned.split(/\r?\n/);
+    if (lines[0] && lines[0].includes("WEBVTT")) {
+      lines.shift();
+    }
+    const rawContent = lines.join('\n');
+    return parseSRT(rawContent); // VTT cues similar to SRT format after cleaning
+  }
+  
+  // generic time parser "00:00:10,500" or "00:00:10.500" 
+  function parseTimeToSeconds(timeStr) {
+    timeStr = timeStr.replace(',', '.');
+    const parts = timeStr.split(':');
+    let seconds = 0;
+    if (parts.length === 3) {
+      seconds = parseInt(parts[0]) * 3600 + parseInt(parts[1]) * 60 + parseFloat(parts[2]);
+    } else if (parts.length === 2) {
+      seconds = parseInt(parts[0]) * 60 + parseFloat(parts[1]);
+    } else {
+      seconds = parseFloat(parts[0]);
+    }
+    return isNaN(seconds) ? 0 : seconds;
+  }
+  
+  // load subtitle file and parse
+  function loadSubtitleFile(file) {
+    if (!file) return;
+    const fileType = file.name.split('.').pop().toLowerCase();
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const content = e.target.result;
+      let parsedCues = [];
+      try {
+        if (fileType === 'vtt') {
+          parsedCues = parseVTT(content);
+        } else {
+          parsedCues = parseSRT(content);
+        }
+        if (parsedCues.length === 0) {
+          cueStatusSpan.innerText = "⚠️ no valid cues found in subtitle file. Check format.";
+          subtitleDisplayDiv.innerHTML = '<span class="subtitle-placeholder">❌ invalid subtitle format</span>';
+          cues = [];
+        } else {
+          cues = parsedCues;
+          subtitleFileNameSpan.innerText = file.name;
+          cueStatusSpan.innerText = `✅ ${cues.length} cues loaded. Press play & watch sync.`;
+          updateSubtitlesByTime(); // refresh if audio playing
+          // if audio not playing, show first cue? just standby.
+          if (audio.paused && cues.length) {
+            subtitleDisplayDiv.innerHTML = '<span style="opacity:0.8;">🎧 subtitles ready — start narration</span>';
+          } else {
+            updateSubtitlesByTime();
+          }
+        }
+      } catch(err) {
+        console.error(err);
+        cues = [];
+        subtitleDisplayDiv.innerHTML = '<span class="subtitle-placeholder">⚠️ error parsing subtitle file</span>';
+        cueStatusSpan.innerText = "parsing failed, ensure .srt or .vtt with timestamps.";
+      }
+    };
+    reader.onerror = () => {
+      cueStatusSpan.innerText = "error reading subtitle file";
+    };
+    reader.readAsText(file, "UTF-8");
+  }
+  
+  // load audio file
+  function loadAudioFile(file) {
+    if (!file) return;
+    if (audioBlobUrl) {
+      URL.revokeObjectURL(audioBlobUrl);
+      audioBlobUrl = null;
+    }
+    const newUrl = URL.createObjectURL(file);
+    audioBlobUrl = newUrl;
+    audio.src = newUrl;
+    audio.load();
+    audioFileNameSpan.innerText = file.name;
+    // reset active playing state, but keep subtitles if already loaded
+    audio.pause();
+    // optional reset active cue display
+    if (cues.length) updateSubtitlesByTime();
+    else {
+      subtitleDisplayDiv.innerHTML = '<span class="subtitle-placeholder">🎙️ audio ready — upload .srt for subtitles</span>';
+    }
+  }
+  
+  // cover image upload
+  function loadCoverImage(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      bookCoverImg.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+  
+  // reset everything: clear audio, subtitles, cover to default
+  function fullReset() {
+    if (audioBlobUrl) {
+      URL.revokeObjectURL(audioBlobUrl);
+      audioBlobUrl = null;
+    }
+    audio.src = "";
+    audio.load();
+    audioFileNameSpan.innerText = "no audio loaded";
+    cues = [];
+    subtitleFileNameSpan.innerText = "no subtitles";
+    subtitleDisplayDiv.innerHTML = '<span class="subtitle-placeholder">✦  load a subtitle file & audio  ✦<br>subtitles will appear here in perfect sync</span>';
+    cueStatusSpan.innerText = "⌛ waiting for cues";
+    // reset cover to default artsy SVG
+    bookCoverImg.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23170a0a'/%3E%3Cpath d='M90 70 L310 70 L310 430 L90 430 Z' fill='%23240f0f' stroke='%23994444' stroke-width='2'/%3E%3Ctext x='200' y='180' font-family='Georgia' font-size='34' fill='%23b77c7c' text-anchor='middle' font-weight='bold'%3ETHE%3C/text%3E%3Ctext x='200' y='230' font-family='Georgia' font-size='38' fill='%23c57a7a' text-anchor='middle' font-weight='bold'%3ETELL-TALE%3C/text%3E%3Ctext x='200' y='280' font-family='Georgia' font-size='36' fill='%23b86b6b' text-anchor='middle'%3EHEART%3C/text%3E%3Cpath d='M140 350 L260 350 L200 400 Z' fill='%238a2f2f' opacity='0.7'/%3E%3Ccircle cx='200' cy='380' r='12' fill='%23aa5555'/%3E%3C/svg%3E";
+    activeCueIndex = -1;
+  }
+  
+  // Event listeners
+  audioUpload.addEventListener('change', (e) => {
+    if (e.target.files.length) loadAudioFile(e.target.files[0]);
+    e.target.value = '';
+  });
+  
+  subtitleUpload.addEventListener('change', (e) => {
+    if (e.target.files.length) loadSubtitleFile(e.target.files[0]);
+    e.target.value = '';
+  });
+  
+  coverUpload.addEventListener('change', (e) => {
+    if (e.target.files.length) loadCoverImage(e.target.files[0]);
+    e.target.value = '';
+  });
+  
+  resetBtn.addEventListener('click', fullReset);
+  
+  audio.addEventListener('timeupdate', onTimeUpdate);
+  audio.addEventListener('ended', () => {
+    // optional: show final message
+    if (cues.length) subtitleDisplayDiv.innerHTML = '<span style="opacity:0.7;">◼︎ narration complete — the beating heart subsides ◼︎</span>';
+  });
+  
+  // preserve sync when seeking
+  audio.addEventListener('seeked', () => {
+    updateSubtitlesByTime();
+  });
+  
+  // initial subtle styling for no scroll and polished presentation
+  window.addEventListener('load', () => {
+    // ensure any default states
+    fullReset(); // sets clean initial state with artsy cover
+    cueStatusSpan.innerText = "📖 upload your Tell-Tale Heart audiobook + subtitles";
+    subtitleDisplayDiv.innerHTML = '<span class="subtitle-placeholder">🕯️ load audio & subtitles to begin the descent into madness 🕯️</span>';
+  });
+</script>
+</body>
+</html>
